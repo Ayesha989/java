@@ -18,10 +18,10 @@ if ($conn) {
         $sftp = ftp_init_sftp($conn);
         echo "✅ Connected and logged in successfully!\n";
     } else {
-        echo "❌ Login failed!\n";
+        echo " Login failed!\n";
     }
 } else {
-    echo "❌ Connection failed!\n";
+    echo " Connection failed!\n";
 }
 ?>
 
