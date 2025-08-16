@@ -26,6 +26,7 @@ if ($conn) {
 function mysql_Connect()
 {
 echo "MySQL connect";
+echo "test1";
 }
 function db_select()
 {
