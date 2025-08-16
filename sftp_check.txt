@@ -23,5 +23,16 @@ if ($conn) {
 } else {
     echo " Connection failed!\n";
 }
+
+function check_mysql_connect()
+{
+
+}
+
+function check_db_select()
+{
+
+}
+
 ?>
 
