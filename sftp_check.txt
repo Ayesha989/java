@@ -23,5 +23,13 @@ if ($conn) {
 } else {
     echo "❌ Connection failed!\n";
 }
+function mysql_Connect()
+{
+echo "MySQL connect";
+}
+function db_select()
+{
+echo "DB select";
+}
 ?>
 
