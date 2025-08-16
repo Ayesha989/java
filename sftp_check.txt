@@ -1,0 +1,27 @@
+<?php
+
+
+
+include_once("ftp_wrapper.php");
+
+$hostname = "10.150.6.193";
+$port = 22;
+$timeout = 5;
+$username = "execsped";
+$password = "execsped";
+
+// Connect
+$conn = ftp_connect($hostname, $port, $timeout);
+
+if ($conn) {
+    if (ftp_login($conn, $username, $password)) {
+        $sftp = ftp_init_sftp($conn);
+        echo "✅ Connected and logged in successfully!\n";
+    } else {
+        echo "❌ Login failed!\n";
+    }
+} else {
+    echo "❌ Connection failed!\n";
+}
+?>
+
