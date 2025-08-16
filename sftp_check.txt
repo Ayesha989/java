@@ -24,14 +24,13 @@ if ($conn) {
     echo " Connection failed!\n";
 }
 
-function check_mysql_connect()
+function mysql_Connect()
 {
-
+echo "MySQL connect";
 }
-
-function check_db_select()
+function db_select()
 {
-
+echo "DB select";
 }
 
 ?>
