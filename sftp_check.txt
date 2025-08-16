@@ -18,11 +18,12 @@ if ($conn) {
         $sftp = ftp_init_sftp($conn);
         echo "✅ Connected and logged in successfully!\n";
     } else {
-        echo "❌ Login failed!\n";
+        echo " Login failed!\n";
     }
 } else {
-    echo "❌ Connection failed!\n";
+    echo " Connection failed!\n";
 }
+
 function mysql_Connect()
 {
 echo "MySQL connect";
@@ -31,6 +32,8 @@ echo "test1";
 function db_select()
 {
 echo "DB select";
+echo "test2";
 }
+
 ?>
 
